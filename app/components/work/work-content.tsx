@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Link from 'next/link';
 import { WorkContainer } from './work-container';
 import { WorkLeft } from './work-left';
 import { WorkRight } from './work-right';

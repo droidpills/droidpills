@@ -6,7 +6,6 @@ export const siteMetadata = {
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://droidpills.com',
-  siteRepo: '',
   siteLogo: '/static/images/logo.png',
   image: '/static/images/logo.png',
   email: 'marco@droidpills.com',
