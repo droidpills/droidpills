@@ -37,7 +37,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         {/* Google Analytics */}
         <Script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=G-FDGNBTW7YC"
+          src="https://www.googletagmanager.com/gtag/js?id=G-TFE73TY0DK"
         />
         <Script
           id="google-analytics"
@@ -47,7 +47,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-FDGNBTW7YC', {
+              gtag('config', 'G-TFE73TY0DK', {
                 page_path: window.location.pathname,
               });
             `,
