@@ -10,8 +10,7 @@ export type WorkTile = {
 
 export const workTiles: WorkTile[] = [
   {
-    description: `Here's a project
-`,
+    description: `Here's a project`,
     title: `we've built.`,
     image: {
       src: '/static/images/mesa-scout.png',
@@ -19,4 +18,13 @@ export const workTiles: WorkTile[] = [
       height: 900,
     },
   },
+  // {
+  //   description: `Here's a project`,
+  //   title: `we've built.`,
+  //   image: {
+  //     src: '/static/images/mesa-scout.png',
+  //     width: 900,
+  //     height: 900,
+  //   },
+  // },
 ];

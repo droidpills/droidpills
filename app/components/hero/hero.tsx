@@ -25,10 +25,9 @@ export default function Hero() {
   return (
     <div>
       <h1 className="sr-only">
-        Hello I&apos;m DroidPills, I&apos;m a software developer, and I love building things for
-        the web.
+        Hello I&apos;m DroidPills.
       </h1>
-      <div className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-116px)]">
+      <div className="relative z-10 flex h-[calc(100vh-81px)] items-center md:h-[calc(100vh-180px)]">
         <div className="mx-auto w-screen max-w-3xl px-4 sm:px-9 xl:max-w-5xl xl:px-0">
           <div className="-mt-36">
             <div ref={ref} className="flex cursor-default flex-col space-y-2">
@@ -49,7 +48,7 @@ export default function Hero() {
               animate={{
                 transform: `translateY(${progress * 10}vh)`,
               }}
-              className="absolute bottom-4 left-1/2 -translate-x-1/2 transform md:bottom-8"
+              className="absolute bottom-3 left-1/2 -translate-x-1/2 transform md:bottom-8"
             >
               <div
                 role="presentation"

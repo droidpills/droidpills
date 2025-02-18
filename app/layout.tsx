@@ -1,6 +1,7 @@
 import '@fontsource/mukta';
 import './tailwind.css';
 
+import Script from 'next/script';
 import Analytics from 'app/components/analytics/analytics';
 import Footer from 'app/components/layouts/footer';
 import Header from 'app/components/layouts/header';
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
     template: '%s | DroidPills',
     default: 'DroidPills',
   },
-  description: 'I build things for the web.',
+  description: 'From bots to full-scale systems',
   metadataBase: new URL('https://droidpills.com'),
 };
 
@@ -32,6 +33,26 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <meta name="msapplication-TileColor" content="#000000" />
         <meta name="theme-color" content="#000000" />
         <link rel="alternate" type="application/rss+xml" href="/feed.xml" />
+
+        {/* Google Analytics */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-FDGNBTW7YC"
+        />
+        <Script
+          id="google-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-FDGNBTW7YC', {
+                page_path: window.location.pathname,
+              });
+            `,
+          }}
+        />
       </head>
       <body className="bg-white text-black antialiased dark:bg-black dark:text-white">
         <ThemeProvider

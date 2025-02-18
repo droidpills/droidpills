@@ -12,6 +12,7 @@ import logo from '../../../public/static/images/logo.png'
 
 export default function Header() {
   const pathName = usePathname();
+ 
 
   return (
     <SectionContainer>
@@ -27,6 +28,21 @@ export default function Header() {
               {navigationLinks.map(({ title, href }) => {
                 const active = pathName?.includes(href);
                 return (
+                  title == 'Blog'? 
+                  <Link
+                    prefetch
+                    key={title}
+                    href={href}
+                    target='_blank'
+                    className={classNames('horizontal-underline text-base', {
+                      'horizontal-underline-active': active,
+                    })}
+                    aria-label={title}
+                  >
+                    <span className="font-semibold tracking-wide text-gray-900 dark:text-gray-100">
+                      {title}
+                    </span>
+                  </Link> :    
                   <Link
                     prefetch
                     key={title}
