@@ -20,7 +20,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
       </WorkLeft>
       <WorkRight progress={progress}>
         <div className="drop-shadow-2xl sm:mt-10 md:mt-24">
-          <a href="https://mesascout.com.br/" target='_blank'>
+          <a href="projects">
           <Image src={image.src} alt={title} width={image.width} height={image.height} />
           </a>
         </div>
