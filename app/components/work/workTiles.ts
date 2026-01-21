@@ -11,6 +11,16 @@ export type WorkTile = {
 
 export const workTiles: WorkTile[] = [
   {
+    description: `Built for scale and performance`,
+    title: `real-world solutions.`,
+    link: 'https://estadia.io/',
+    image: {
+      src: '/static/images/project/Untitled.png',
+      width: 900,
+      height: 900,
+    },
+  },
+  {
     description: `Here are some projects`,
     title: `we've built.`,
     link: 'https://cca.blocktrends.com.br/',
@@ -35,7 +45,7 @@ export const workTiles: WorkTile[] = [
     title: `latest projects.`,
     link: 'https://mesascout.com.br/',
     image: {
-      src: '/static/images/project/mesa-scout-home.png',
+      src: '/static/images/project/mesa-scout-home.jpg',
       width: 900,
       height: 900,
     },

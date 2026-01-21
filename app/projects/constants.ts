@@ -2,6 +2,13 @@ import { Project } from './types';
 
 export const projects: Project[] = [
   {
+    title: 'Estadia',
+    src: 'estadia-mockup.png',
+    color: '#dbeafe',
+    url: 'https://estadia.io/',
+    role: 'Full Stack Development',
+  },
+  {
     title: 'Certificação Criptoativos',
     src: 'cca.png',
     color: '#dbeafe',
@@ -17,7 +24,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Mesa Scout',
-    src: 'mesa-scout-home.png',
+    src: 'mesa-scout-home.jpg',
     color: '#dbeafe',
     url: 'https://mesascout.com.br/',
     role: 'Data Extraction & Automation',
